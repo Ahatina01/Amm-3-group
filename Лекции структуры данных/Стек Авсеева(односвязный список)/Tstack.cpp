@@ -64,7 +64,10 @@ void Tstack::pop()
 
 char Tstack::peak()
 {
-	return top->data;
+	if (top)//Добавление от автора
+	{
+		return top->data;
+	}
 }
 
 bool Tstack::isEmpty()
@@ -84,4 +87,5 @@ void Tstack::clear()
 Tstack::~Tstack()
 {
 	clear();
+
 }
